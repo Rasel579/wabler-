@@ -45,7 +45,7 @@ app.use(function(req, res, next){
 
 app.use(errorHandler);
 
-app.listen(process.env.PORT || 8081, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
     console.log(`Server is running in Port ${process.env.PORT}`);
 });
 
